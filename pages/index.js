@@ -6,7 +6,12 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>404 Not Found</title>
-        
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+        />
       </Head>
 
       <main className={styles.main}>
