@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>404 Not Found</title>
+        
       </Head>
 
       <main className={styles.main}>
