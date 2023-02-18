@@ -26,10 +26,10 @@ export default function Home() {
       <main className={styles.main}>
         <aside className={styles.scarecrow}>
           <Image
-            src={scarecrow}
+            src="/Scarecrow.png"
             alt="Scarecrow image"
-            // width={540}
-            // height={448}
+            width={540}
+            height={448}
             priority
           />
         </aside>
