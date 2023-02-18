@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import scarecrow from '../images/Scarecrow.png';
+// import scarecrow from '../images/Scarecrow.png';
 
 export default function Home() {
   return (
