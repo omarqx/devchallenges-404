@@ -30,7 +30,6 @@ export default function Home() {
             alt="Scarecrow image"
             width={540}
             height={448}
-            priority
           />
         </aside>
         <article className={styles.content}>
