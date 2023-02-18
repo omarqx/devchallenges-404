@@ -5,7 +5,7 @@ import scarecrow from '../images/Scarecrow.png';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>404 Not Found</title>
         <meta charSet="utf-8" />
@@ -22,18 +22,19 @@ export default function Home() {
           href="https://devchallenges.io/"
         />
       </Head>
-      <header>404 NOT FOUND</header>
-
+      <header className={styles.title}>404 NOT FOUND</header>
       <main className={styles.main}>
-        <Image
-          src={scarecrow}
-          alt="Scarecrow image"
-          width={540}
-          height={448}
-          priority
-        />
-        <article>
-          <h1>I have bad news for you</h1>
+        <aside className={styles.scarecrow}>
+          <Image
+            src={scarecrow}
+            alt="Scarecrow image"
+            // width={540}
+            // height={448}
+            priority
+          />
+        </aside>
+        <article className={styles.content}>
+          <header>I have bad news for you</header>
           <p className={styles.description}>
             The page you are looking for might be removed or is temporarily
             unavailable
@@ -45,6 +46,6 @@ export default function Home() {
       <footer className={styles.footer}>
         created by username - devChallenges.io
       </footer>
-    </div>
+    </>
   );
 }
