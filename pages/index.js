@@ -26,13 +26,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-          <Image
-            src={scarecrow}
-            alt="Scarecrow image"
-            width={100}
-            height={24}
-            priority
-          />
+          <Image src={scarecrow} alt="Scarecrow image" />
         </div>
         <p className={styles.description}>
           Get started by editing{' '}
