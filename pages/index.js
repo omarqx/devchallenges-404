@@ -1,24 +1,39 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import scarecrow from '../images/Scarecrow.png';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>404 Not Found</title>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1,
   maximum-scale=5"
         />
+        <link rel="icon" href="devchallenges.png" />
+
+        <link
+          rel="shortcut icon"
+          type="image/x-icon"
+          href="https://devchallenges.io/"
+        />
       </Head>
+      <header>404 NOT FOUND</header>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
+        <div>
+          <Image
+            src={scarecrow}
+            alt="Scarecrow image"
+            width={100}
+            height={24}
+            priority
+          />
+        </div>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
